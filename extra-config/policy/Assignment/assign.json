@@ -1,0 +1,22 @@
+{
+ "identity": {
+  "type": "UserAssigned",
+  "userAssignedIdentities": {
+   "/subscriptions/yourSubscription/resourceGroups/yourRg/providers/Microsoft.ManagedIdentity/userAssignedIdentities/yourUserAssignedname/Id": {}
+  }
+ },
+ "properties": {
+  "displayName": "Policy Assignment DeletionDate Tag",
+  "policyDefinitionId": "/providers/Microsoft.Management/managementgroups/YourmanagementgroupID/providers/Microsoft.Authorization/policySetDefinitions/Company-Subs",
+  "scope": "/providers/Microsoft.Management/managementGroups/YourmanagementgroupName",
+  "description": "Policy Assignment for DeletionDate Tag to Resource Groups in your subsciptions",
+  "notScopes": [],
+  "parameters": {},
+  "metadata": {},
+  "enforcementMode": "Default"
+ },
+ "id": "/providers/Microsoft.Management/managementGroups/YourmanagementgroupName/providers/Microsoft.Authorization/policyAssignments/Company-Subs-PA",
+ "type": "Microsoft.Authorization/policyAssignments",
+ "name": "Company-Subs-PA",
+ "location": "westeurope"
+}

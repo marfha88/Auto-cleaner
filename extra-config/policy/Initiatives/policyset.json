@@ -1,0 +1,31 @@
+{
+ "properties": {
+  "displayName": "Your company subscriptions",
+  "policyType": "Custom",
+  "description": "This is a policy set used for Your company subscriptions",
+  "metadata": {
+   "category": "Asset Management",
+   "ASC": "false"
+  },
+  "parameters": {},
+  "policyDefinitions": [
+   {
+    "policyDefinitionReferenceId": "Add DeletionDate Tag to Resource Groups",
+    "policyDefinitionId": "/providers/Microsoft.Management/managementgroups/YourmanagementgroupID/providers/Microsoft.Authorization/policyDefinitions/ApplyDeletionDateTagsToSubs",
+    "parameters": {},
+    "groupNames": ["Asset Management"]
+   }
+  ],
+  "policyDefinitionGroups": [
+   {
+    "name": "Asset Management",
+    "category": "Asset Management",
+    "displayName": "Asset Management - Controlling what resources are allowed",
+    "description": "Resources will be limited by the these policies"
+   }
+  ]
+ },
+ "id": "/providers/Microsoft.Management/managementgroups/YourmanagementgroupID/providers/Microsoft.Authorization/policySetDefinitions/Company-Subs",
+ "type": "Microsoft.Authorization/policySetDefinitions",
+ "name": "Company-Subs"
+}
